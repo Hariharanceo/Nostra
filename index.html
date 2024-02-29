@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+     <!-- Tailwind Css CDN link -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+         tailwind.config = {
+             theme: {
+                 extend: {
+                     colors: {
+                         clifford: '#da373d',
+                     }
+                 }
+             }
+         }
+     </script>
+    <!-- FontAwesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts CDN -->
+   
+</head>
+
+<body>
+    <!-- Ad section -->
+    <div id="Ad" class="bg-gray-900 p-2 justify-center flex items-center gap-2 md:gap-10 Ad">
+        <h1 class="text-gray-300 md:text-xl">Sign Up and <span class="md:text-2xl font-bold">GET 20% OFF</span> for your firstOrder</h1>
+        <div id="close">
+            <img src="./images/icons/x-button.png" alt="" class="w-2 md:w-4 cursor-pointer">
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav id="navbar" class="sticky top-0 z-20 bg-white p-5 flex justify-between">
+        <h1 class="text-3xl font-extrabold">Nostra</h1>
+        <div id="menuIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+              </svg> 
+        </div>         
+        <ul class=" mt-2 hidden md:flex md:gap-20 ">
+            <li class="hover:underline cursor-pointer"><a href="#Home">Home</a></li>
+            <li class="hover:underline cursor-pointer"><a href="#arrival__section">New Arrival</a></li>
+            <li class="hover:underline cursor-pointer"><a href="#sales__section">Most Wanted</a></li>
+            <li class="hover:underline cursor-pointer"><a href="collection.html">Collections</a></li>
+            <li class="hover:underline cursor-pointer"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navigation -->
+    <nav id="sidenav" class="bg-gray-900 p-5 z-20 fixed text-white flex flex-col gap-10 transition-all duration-1000 md:hidden" style="width: 50%; height: 100vh;top: 0; left: -50%;">
+        <div id="closenav" class="flex justify-end">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>              
+        </div>
+        <ul class="md:hidden flex flex-col gap-5 items-center">
+            <li class="hover:underline cursor-pointer"><a href="">Home</a></li>
+            <li class="hover:underline cursor-pointer"><a href="#arrival__section">New Arrival</a></li>
+            <li class="hover:underline cursor-pointer"><a href="#sales__section">Most Wanted</a></li>
+            <li class="hover:underline cursor-pointer"><a href="collection.html">Collections</a></li>
+            <li class="hover:underline cursor-pointer"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div class="slider">
+        <div class="slider-left-button">
+            <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="slider-content">
+            <h1>Level up your style with our</h1>
+            <h2 class="text-white text-4xl ">Summer Collections</h2> 
+            <button class="bg-white text-black mt-10 rounded-xl w-32 p-2 md:p-2 z-7"> <a href="collection.html">Shop Now</a> <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        
+        <div class="overlay" style="height: 100%; z-index: 5;"></div>
+
+        <div class="slider-image-container">
+            <img class="slider-image" src="./carousel.png" alt="">
+            <img class="slider-image" src="./carousel.png" alt="">
+            <img class="slider-image" src="./carousel.png" alt="">
+            <img class="slider-image" src="./carousel.png" alt="">
+            
+        </div>
+
+        <div class="slider-right-button">
+            
+            <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <!-- Brand Section -->
+    <section class="mt-10">
+        <h1 class="text-4xl  mt-10 font-bold mx-8 items-center underline">Brands</h1>
+        <div class="text-center grid grid-cols-3 gap-5 mt-5 md:flex md:justify-between md:ml-5">
+            <div>
+                <img src="./images/brands/puma.png" class="md:w-20 w-10 inline" alt="">
+                <h1 class="text-xl font-bold">Puma</h1>
+            </div>
+            <div>
+                <img src="./images/brands/adidas.png" class="md:w-20 w-10 inline" alt="">
+                <h1 class="text-xl font-bold">Adidas</h1>
+            </div>
+            <div>
+                <img src="./images/brands/behance.png" class="md:w-20 w-10 inline" alt="">
+                <h1 class="text-xl font-bold">Behance</h1>
+            </div>
+            <div>
+                <img src="./images/brands/simple.png" class="md:w-20 w-10 inline" alt="">
+                <h1 class="text-xl font-bold">Simple</h1>
+            </div>
+            <div>
+                <img src="./images/brands/leaves.png" class="md:w-20 w-10 inline" alt="">
+                <h1 class="text-xl font-bold">Leaves</h1>
+            </div>
+            <div>
+                <img src="./images/brands/twitch.png" class="md:w-20 w-10 inline" alt="">
+                <h1 class="text-xl font-bold">Twitch</h1>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!--text -->
+    <div class="flex justify-between items-center mt-10">
+        <div class="text-4xl font-bold p-8" style="width:500px;">
+            <h1>We provide Best Customer Experience</h1>
+        </div>
+        <div class="text-2xl p-12">
+            <p>|| We ensure that our customer have the best shopping experience</p>
+        </div>
+    </div>
+    <!-- guarentee -->
+    <div class="flex justify-between ">
+        <div class="p-5 bg-gray-100 m-5 items-center border border-black rounded">
+            <img src="./Images/check-mark.svg" width="50px" height="50px">
+            <p class="text-2xl font-bold mt-3">Original Products</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolores. Id laborum reprehenderit quidem voluptates deserunt at mollitia reiciendis harum!</p>
+        </div>
+        <div class="p-5 bg-gray-100 m-5 items-center border border-black rounded">
+            <img src="./Images/happy.svg" width="50px" height="50px">
+            <p class="text-2xl font-bold mt-3">Satisfaction Guarantee</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolores. Id laborum reprehenderit quidem voluptates deserunt at mollitia reiciendis harum!</p>
+        </div>
+        <div class="p-5 bg-gray-100 m-5 items-center border border-black rounded">
+            <img src="./Images/new-product.png" width="50px" height="50px">
+            <p class="text-2xl font-bold mt-3">New Arrival Everyday</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolores. Id laborum reprehenderit quidem voluptates deserunt at mollitia reiciendis harum!</p>
+        </div>
+        <div class="p-5 bg-gray-100 m-5 items-center border border-black rounded">
+            <img src="./Images/fast-delivery.png" width="50px" height="50px">
+            <p class="text-2xl font-bold mt-3">Fast & Free Shipping</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolores. Id laborum reprehenderit quidem voluptates deserunt at mollitia reiciendis harum!</p>
+        </div>
+        
+    </div>
+
+
+    <br><br>
+    <!-- New Arrivals Setion -->
+    <section id="arrival__section" class="m-5">
+        <h1 class="text-4xl font-bold my-10 mx-8 items-center underline">New Arrivals</h1>
+        
+        <div id="arrivals" class="mt-5">
+            <div id="arrivals__items" class="relative">
+                <img src="./images/arrivals img/shrt1.png" alt="">
+                <div class="overlay"></div>
+                <div class="arrival__btn p-2 rounded">
+                    <button class="flex items-center text-sm"> <a href="collection.html">Shop Now</a> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="arrivals__items" class="relative">
+                <img src="./images/arrivals img/shirt2.png" alt="">
+                <div class="overlay"></div>
+                <div class="arrival__btn p-2 rounded">
+                    <button class="flex items-center text-sm"> <a href="collection.html">Shop Now</a>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="arrivals__items" class="relative">
+                <img src="./images/arrivals img/shirt3.png" alt="">
+                <div class="overlay"></div>
+                <div class="arrival__btn p-2 rounded">
+                    <button class="flex text-sm items-center"> <a href="collection.html">Shop Now</a> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="arrivals__items" class="relative">
+                <img src="./images/arrivals img/shirt4.png" alt="">
+                <div class="overlay"></div>
+                <div class="arrival__btn p-2 rounded">
+                    <button class="flex text-sm items-center"> <a href="collection.html"> <a href="collection.html">Shop Now</a> </a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex justify-between gap-4 overflow-auto mx-8 ">
+        <img src="./New Arrival/AS_D_Discover_NC_16_Prints.jpg">
+        <img src="./New Arrival/AS_D_Discover_NC_31_Everydayblazers.jpg">
+        <img src="./New Arrival/AS_D_Discover_NC_34_Jacket.jpg">
+        <img src="./New Arrival/AS_D_Discover_NC_15_Dopamine.jpg">
+        <img src="./New Arrival/AS_D_Discover_NC_32_FridayDressing.jpg">
+        <img src="./New Arrival/AS_D_Discover_NC_33_sweatshirts.jpg">
+        <img src="./New Arrival/AS_D_Discover_NC_30_Whiteshirts.jpg">
+    </div>
+    <br><br>
+
+    <!-- Sales Section -->
+    <section id="sales__section" class="m-5">
+        <h1 class="text-4xl font-bold my-10 mx-8 items-center underline">Most Wanted</h1>
+        <div id="sales" class="mt-5">
+            <div id="sales__item" class="relative">
+                <img src="./images/sales/sales1.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>     
+            </div>
+            <div id="sales__item" class="relative">
+                <div class="sales__overflow"></div>
+                <img src="./images/sales/sales2.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>        
+            </div>
+            <div id="sales__item" class="relative">
+                <img src="./images/sales/sales3.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>         
+            </div>
+            <div id="sales__item" class="relative">
+                <div class="sales__overflow"></div>
+                <img src="./images/sales/sales4.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>         
+            </div>
+            <div id="sales__item" class="relative">
+                <div class="sales__overflow"></div>
+                <img src="./images/sales/sales5.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>         
+            </div>
+            <div id="sales__item" class="relative">
+                <img src="./images/sales/sales6.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>        
+            </div>
+            <div id="sales__item" class="relative">
+                <img src="./images/sales/sales7.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>        
+            </div>
+            <div id="sales__item" class="relative">
+                <div class="sales__overflow"></div>
+                <img src="./images/sales/sales8.png" alt="">
+                <p class="sales__item__text bg-red-500 text-white p-2 text-sm md:text-xl">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-10 w-5 absolute right-0" style="bottom: 22%;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>         
+            </div>
+    </section>
+
+    <div class="flex items-center justify-between gap-4  overflow-auto mx-8 opacity-70">
+        <div>
+            <img  src="./Most Wanted/13.avif" width="1500px" height="1500px" class="">
+            <h1 class="bg-red-700 w-fit p-3 font-bold text-white text-2xl font-serif relative bottom-14">Sale</h1>
+        </div>
+        
+        <div>
+            <img src="./Most Wanted/5.avif" width="1500px" height="1500px">
+            <h1 class="bg-red-700 w-fit p-3 font-bold text-white text-2xl font-serif relative bottom-14">Sale</h1>
+        </div>
+        <div>
+            <img src="./Most Wanted/15.avif" width="1500px" height="1500px">
+            <h1 class="bg-red-700 w-fit p-3 font-bold text-white text-2xl font-serif relative bottom-14">Sale</h1>
+        </div>
+        <div>
+            <img src="./Most Wanted/8.avif" width="1500px" height="1500px">
+            <h1 class="bg-red-700 w-fit p-3 font-bold text-white text-2xl font-serif relative bottom-14">Sale</h1>
+        </div>
+        <div>
+            <img src="./Most Wanted/3.avif" width="1500px" height="1500px">
+            <h1 class="bg-red-700 w-fit p-3 font-bold text-white text-2xl font-serif relative bottom-14">Sale</h1>
+        </div>
+        <div>
+            <img src="./Most Wanted/4.avif" width="1500px" height="1500px">
+            <h1 class="bg-red-700 w-fit p-3 font-bold text-white text-2xl font-serif relative bottom-14">Sale</h1>
+        </div>  
+    </div>
+
+
+    <!-- Limited offer -->
+    <div class="bg-gray-800 p-5 flex justify-around items-center">
+        <div>
+            <img src="./images/offer img.png" alt="">
+        </div>
+        <div class="px-14">
+            <h1 class="text-7xl font-bold text-white">Limited offer</h1>
+            <p class="text-4xl font-bold text-white mt-2">35% OFF on this for the first 30 Customers</p>
+            <button type="button" class="bg-white text-black mt-5 p-2 border rounded w-32">  <a href="collection.html">Shop Now</a> <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+
+
+    <!-- Join our news letter -->
+    <div class="text-center mt-20">
+        <h1 class="font-bold text-4xl text-gray-800">Join our News Letter</h1>
+        <p class="font-bold text-2xl mt-1">Signup for email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class=" border border-black  mt-2 w-4/6">
+        <br>
+        <button type="button" class="bg-black text-white mt-5 p-2 border rounded w-32"> Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="p-5 bg-gray-800 mt-10 text-white">
+        <h1 class="font-bold text-4xl">Nostra</h1>
+        <p class="font-bold text-2xl mt-5">The Standard chunk of lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <div class="flex text-start p-2 mt-5 gap-10">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+        </div>
+        <p class="font-bold text-2xl">@ 2024 Nostra.com</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
